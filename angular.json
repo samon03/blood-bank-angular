@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Blood-Bank"
+    }
+  },
+  "defaultProject": "Blood-Bank",
+  "cli": {
+    "analytics": false
+  }
 }
