@@ -15,4 +15,5 @@ export class User {
   address: string;
   isAdmin: false;
   isDonate: false;
+  donate: Date;
 }
