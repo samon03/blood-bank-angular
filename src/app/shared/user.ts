@@ -3,7 +3,7 @@ export class User {
   name: string;
   group: string;
   weight: number;
-  date: Date;
+  dob: Date;
   religon: string;
   email: string;
   mobile: string;
@@ -15,5 +15,5 @@ export class User {
   address: string;
   isAdmin: false;
   isDonate: false;
-  donate: Date;
+  donateDate: Date;
 }
