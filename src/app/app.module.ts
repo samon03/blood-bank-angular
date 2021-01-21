@@ -13,6 +13,7 @@ import { FeedbackComponent } from './home/feedback/feedback.component';
 
 import { AppRoutingModule } from '../app/app-routing/app-routing.module';
 import { DonateComponent } from './home/Feed/donate/donate.component';
+import { DonorListComponent } from './home/Feed/Donor/donor-list/donor-list.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DonateComponent } from './home/Feed/donate/donate.component';
     DonorComponent,
     FeedbackComponent,
     DonateComponent,
+    DonorListComponent,
   ],
   imports: [
     BrowserModule,

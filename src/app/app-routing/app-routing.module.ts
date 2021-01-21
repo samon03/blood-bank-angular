@@ -8,6 +8,8 @@ import { DonorComponent } from '../home/Feed/donor/donor.component';
 import { FeedbackComponent } from '../home/feedback/feedback.component';
 import { RegstrationComponent } from '../home/regstration/regstration.component';
 import { DonateComponent } from '../home/Feed/donate/donate.component';
+import { EditComponent } from '../home/Feed/edit/edit.component';
+import { DonorListComponent } from '../home/Feed/Donor/donor-list/donor-list.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'request', component: RequestComponent},
   { path: 'donate', component: DonateComponent},
   { path: 'donor', component: DonorComponent},
+  { path: 'donor-list', component: DonorListComponent},
+  { path: 'edit', component: EditComponent },
   { path: 'feedback', component: FeedbackComponent},
   { path: '', component: FeedComponent }
 ];
