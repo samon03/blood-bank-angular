@@ -7,13 +7,15 @@ import { RequestComponent } from '../home/Feed/request/request.component';
 import { DonorComponent } from '../home/Feed/donor/donor.component';
 import { FeedbackComponent } from '../home/feedback/feedback.component';
 import { RegstrationComponent } from '../home/regstration/regstration.component';
+import { DonateComponent } from '../home/Feed/donate/donate.component';
 
 
 const routes: Routes = [
   { path: 'home', component: FeedComponent},
   { path: 'registration', component: RegstrationComponent},
   { path: 'request', component: RequestComponent},
-  { path: 'donate', component: DonorComponent},
+  { path: 'donate', component: DonateComponent},
+  { path: 'donor', component: DonorComponent},
   { path: 'feedback', component: FeedbackComponent},
   { path: '', component: FeedComponent }
 ];
