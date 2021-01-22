@@ -14,6 +14,7 @@ export class User {
   district: string;
   address: string;
   isAdmin: boolean;
+  isRegistered: boolean;
   isDonate: boolean;
   donateDate: Date;
 }

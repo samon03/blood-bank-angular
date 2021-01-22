@@ -15,6 +15,7 @@
       "district": "Dhaka",
       "address": "32, Tuku Tower, Dhaka - 1200",
       "isAdmin": true,
+      "isRegistered": true,
       "id": 1
     },
     {
@@ -34,9 +35,46 @@
       "isAdmin": false,
       "id": 2,
       "isDonate": true,
+      "isRegistered": true,
       "donateDate": {
         "donationDate": "2021-01-21"
       }
+    },
+    {
+      "name": "Maria Raute",
+      "group": "AB-",
+      "weight": 67,
+      "dob": "1990-05-05",
+      "religon": "Islam",
+      "email": "maria@gmail.com",
+      "mobile": "900 900 900",
+      "alternative": "800 800 800",
+      "union": "LA",
+      "postoffice": "LA",
+      "station": "LA",
+      "district": "LA",
+      "address": "5th floor, Central statte, 23, Satara Road ",
+      "isAdmin": false,
+      "isRegistered": true,
+      "id": 3
+    },
+    {
+      "name": "Joey Chandler",
+      "group": "O+",
+      "weight": 79,
+      "dob": "1980-07-22",
+      "religon": "Islam",
+      "email": "joey@gmail.com",
+      "mobile": "500 5000 5000",
+      "alternative": "500 5000 6000",
+      "union": "Dubai",
+      "postoffice": "Dubai",
+      "station": "Dubai",
+      "district": "Dubai",
+      "address": "43 Snow Mall, South Park, Dubai ",
+      "isAdmin": false,
+      "isRegistered": true,
+      "id": 4
     }
   ],
   "requesters": [],

@@ -33,6 +33,7 @@ export class UserService {
     else {
       user.isAdmin = false;
     }
+    user.isRegistered = true;
     return this.http.post<User[]>(this.userUrl , user);
   }
 
