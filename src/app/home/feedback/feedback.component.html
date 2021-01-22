@@ -1,91 +1,50 @@
 <div class="row">
   <div class="col-sm-12 mb-3">
+  <form  #feedForm="ngForm" (ngSubmit)="onFeedback(feedForm)">
     <div class="card p-5">
       <div class="card-body">
         <h5 class="card-title mb-3">Feedback </h5>
         <div class="row">
-
           <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" placeholder="Name">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name" ngModel>
+          </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" name="group" id="group" placeholder="Blood Group" ngModel>
           </div>
           <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" placeholder="Blood Group">
-          </div>
-          <div class="col-md-4 mb-3">
-            <input type="text" class="form-control" placeholder="Mobile">
+            <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile" ngModel>
           </div>
           <div class="col-md-12 mb-3">
-            <textarea class="form-control" placeholder="Feedback" col="10" row="4"></textarea>
+            <textarea class="form-control" name="feedback" id="feedback" placeholder="Feedback" col="10" row="4" ngModel></textarea>
           </div>
       </div>
       <div class="d-flex justify-content-end">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
+    </div>
+  </form>
   </div>
 </div>
 
 <div class="p-3">
-  <div class="card p-3 mb-3">
+  <div class="card p-3 mb-3" *ngFor="let fb of feedback">
     <div class="card-body">
       <div class="row">
         <div class="col-md-4 mb-3">
-          <b>Name: </b> Samson deo
+          <b>Name: </b> {{ fb.name }}
         </div>
         <div class="col-md-4 mb-3">
-          <b>Blood Group: </b> A+
+          <b>Blood Group: </b> {{ fb.group }}
         </div>
         <div class="col-md-4 mb-3">
-          <b>Mobile: </b> 019288237325
+          <b>Mobile: </b> {{ fb.mobile }}
         </div>
         <div class="col-md-12 mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-           when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          {{ fb.feedback }}
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="card p-3 mb-3">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <b>Name: </b> Samson deo
-        </div>
-        <div class="col-md-4 mb-3">
-          <b>Blood Group: </b> A+
-        </div>
-        <div class="col-md-4 mb-3">
-          <b>Mobile: </b> 019288237325
-        </div>
-        <div class="col-md-12 mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-           when an unknown printer took a galley of type and scrambled it to make a type specimen book
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card p-3 mb-3">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <b>Name: </b> Samson deo
-        </div>
-        <div class="col-md-4 mb-3">
-          <b>Blood Group: </b> A+
-        </div>
-        <div class="col-md-4 mb-3">
-          <b>Mobile: </b> 019288237325
-        </div>
-        <div class="col-md-12 mb-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-           when an unknown printer took a galley of type and scrambled it to make a type specimen book
-        </div>
-      </div>
     </div>
   </div>
 

@@ -18,9 +18,9 @@ const routes: Routes = [
   { path: 'request', component: RequestComponent},
   { path: 'donate', component: DonateComponent},
   { path: 'donor', component: DonorComponent},
+  { path: 'feedback', component: FeedbackComponent},
   { path: 'donor-list', component: DonorListComponent},
   { path: ':id', component: EditComponent },
-  { path: 'feedback', component: FeedbackComponent},
   { path: '', component: FeedComponent }
 ];
 
