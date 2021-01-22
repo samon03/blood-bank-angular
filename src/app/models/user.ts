@@ -13,7 +13,7 @@ export class User {
   station: string;
   district: string;
   address: string;
-  isAdmin: false;
-  isDonate: false;
+  isAdmin: boolean;
+  isDonate: boolean;
   donateDate: Date;
 }

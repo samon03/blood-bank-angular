@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'donate', component: DonateComponent},
   { path: 'donor', component: DonorComponent},
   { path: 'donor-list', component: DonorListComponent},
-  { path: 'edit', component: EditComponent },
+  { path: ':id', component: EditComponent },
   { path: 'feedback', component: FeedbackComponent},
   { path: '', component: FeedComponent }
 ];

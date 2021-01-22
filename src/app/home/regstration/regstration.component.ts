@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from "@angular/forms";
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-regstration',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegstrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService: UserService,
+    private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(form: NgForm) {
+    this.userService.postUser(form.value).subscribe(user => {
+      console.log(user);
+      this.router.navigate(['/home']);
+    });
+
   }
 
 }

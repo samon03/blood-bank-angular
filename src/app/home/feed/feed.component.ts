@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-feed',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
-  constructor() { }
+  user: User[] = [];
+
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.getUser();
+  }
+
+  getUser() {
+    this.userService.getUsers().subscribe(user => {
+      this.user = user;
+    });
   }
 
 }

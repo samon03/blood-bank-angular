@@ -15,6 +15,9 @@ import { AppRoutingModule } from '../app/app-routing/app-routing.module';
 import { DonateComponent } from './home/Feed/donate/donate.component';
 import { DonorListComponent } from './home/Feed/Donor/donor-list/donor-list.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,9 @@ import { DonorListComponent } from './home/Feed/Donor/donor-list/donor-list.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
