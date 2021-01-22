@@ -13,6 +13,7 @@ export class User {
   station: string;
   district: string;
   address: string;
+  relation: string;
   isAdmin: boolean;
   isRegistered: boolean;
   isDonate: boolean;

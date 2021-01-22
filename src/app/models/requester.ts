@@ -3,14 +3,12 @@ export class Requester {
   name: string;
   group: string;
   date: Date;
-  religon: string;
-  email: string;
   mobile: string;
   alternative: string;
+  relation: string;
   union: string;
   postoffice: string;
   station: string;
   district: string;
   address: string;
-  isAdmin: false;
 }

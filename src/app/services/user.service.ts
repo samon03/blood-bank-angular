@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../models/user';
-
-
+import { Requester } from '../models/requester';
+import { RequestService } from './request.service';
 
 @Injectable({
   providedIn: 'root'
@@ -40,5 +40,4 @@ export class UserService {
   putUser(user: User): Observable<User[]>{
     return this.http.put<User[]>(`${this.userUrl}/${user.id}`, user);
   }
-
 }

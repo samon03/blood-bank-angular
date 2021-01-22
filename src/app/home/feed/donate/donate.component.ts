@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from 'src/app/services/request.service';
+import { Requester } from 'src/app/models/requester';
 
 @Component({
   selector: 'app-donate',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonateComponent implements OnInit {
 
-  constructor() { }
+  reqUser: Requester[] = [];
+
+  constructor(private requestService: RequestService) { }
 
   ngOnInit(): void {
+     this.requestService.getRequester().subscribe(reqUser => {
+         this.reqUser = reqUser;
+     })
   }
 
 }

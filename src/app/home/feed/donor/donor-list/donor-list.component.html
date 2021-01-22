@@ -2,17 +2,17 @@
   <div class="col-sm-12 mb-3">
     <h5 class="card-title mb-3">Donor List</h5>
 
-    <div class="card mb-3">
+    <div class="card mb-3" >
       <div class="card-body">
-        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <div class="pb-3 mb-0 small lh-sm border-bottom w-100" *ngFor="let do of user">
           <div class="d-flex justify-content-between">
-            <h6 class="text-gray-dark">Adam Deo</h6>
+            <h6 class="text-gray-dark">{{ do.name }}</h6>
             <a href="#" style="color: rgb(14, 187, 115);">Active</a>
           </div>
-          <span class="d-block"><b>Late Donation Date: </b>09-02-20</span>
+          <span class="d-block"><b>Late Donation Date: </b>{{ do.donateDate | date }}</span>
         </div>
 
-        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+        <!-- <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
           <div class="d-flex justify-content-between">
             <h6 class="text-gray-dark">Jhon Smith</h6>
             <a href="#" style="color: crimson;">Inactive</a>
@@ -26,7 +26,7 @@
             <a href="#" style="color: crimson;">Inactive</a>
           </div>
           <span class="d-block"><b>Late Donation Date: </b>09-02-20</span>
-        </div>
+        </div> -->
 
       </div>
     </div>

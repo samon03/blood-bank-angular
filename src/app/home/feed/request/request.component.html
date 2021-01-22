@@ -1,47 +1,49 @@
 <div class="row">
   <div class="col-sm-12 mb-3">
     <div class="card p-5">
+      <form  #rForm="ngForm" (ngSubmit)="onSubmit(rForm)">
       <div class="card-body">
         <h5 class="card-title mb-3">Request for Blood </h5>
-        <div class="row">
-
-          <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" placeholder="Name">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name" ngModel>
           </div>
           <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" placeholder="Blood Group">
+              <input type="text" class="form-control" name="group" id="group" placeholder="Blood Group" ngModel>
           </div>
-          <div class="col-md-4 mb-3">
-            <input type="date" class="form-control" placeholder="Date">
-          </div>
-          <div class="col-md-4 mb-3">
-            <input type="text" class="form-control" placeholder="Mobile">
-          </div>
-          <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" placeholder="Alternate Mobile">
-          </div>
-          <div class="col-md-4 mb-3">
-            <input type="text" class="form-control" placeholder="Relation">
-          </div>
-          <div class="col-md-3 mb-3">
-            <input type="text" class="form-control" placeholder="Union">
-          </div>
-          <div class="col-md-3 mb-3">
-            <input type="text" class="form-control" placeholder="Post office">
-          </div>
-          <div class="col-md-3 mb-3">
-            <input type="text" class="form-control" placeholder="Police station">
-          </div>
-          <div class="col-md-3 mb-3">
-            <input type="text" class="form-control" placeholder="District">
-          </div>
-          <div class="col-md-12 mb-3">
-            <textarea class="form-control" placeholder="Present Address" col="10" row="4"></textarea>
-          </div>
+            <div class="col-md-4 mb-3">
+              <input type="date" class="form-control" name="date" id="date" placeholder="Date" ngModel>
+            </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile" ngModel>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" name="alternative" id="alternative" placeholder="Alternate Mobile" ngModel>
+            </div>
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control" name="relation" id="relation" placeholder="Relation" ngModel>
+            </div>
+            <div class="col-md-3 mb-3">
+              <input type="text" class="form-control" name="union" id="union" placeholder="Union" ngModel>
+            </div>
+            <div class="col-md-3 mb-3">
+              <input type="text" class="form-control" name="postoffice" id="postoffice" placeholder="Post office" ngModel>
+            </div>
+            <div class="col-md-3 mb-3">
+              <input type="text" class="form-control" name="station" id="station" placeholder="Police station" ngModel>
+            </div>
+            <div class="col-md-3 mb-3">
+              <input type="text" class="form-control" name="district" id="district" placeholder="District" ngModel>
+            </div>
+            <div class="col-md-12 mb-3">
+              <textarea class="form-control" name="address" id="address" placeholder="Present Address" col="10" row="4" ngModel></textarea>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
       </div>
-      <div class="d-flex justify-content-end">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
+     </form>
     </div>
   </div>
 </div>

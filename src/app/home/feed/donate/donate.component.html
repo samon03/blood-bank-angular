@@ -2,32 +2,32 @@
   <div class="col-sm-12 mb-3">
     <h5 class="card-title mb-3">Donate</h5>
 
-    <div class="card mb-3">
+    <div class="card mb-3"*ngFor="let req of reqUser">
       <div class="card-body">
         <div class="row">
           <div class="col-md-4 mb-3">
-            <b>Name: </b> Samson deo
+            <b>Name: </b> {{ req.name }}
           </div>
           <div class="col-md-4 mb-3">
-            <b>Blood Group: </b> A+
+            <b>Blood Group: </b> {{ req.group }}
           </div>
           <div class="col-md-4 mb-3">
-            <b>Date: </b> 03-03-2021
+            <b>Date: </b> {{ req.date | date }}
           </div>
           <div class="col-md-4 mb-3">
-            <b>Mobile: </b> 019288237325
+            <b>Mobile: </b> {{ req.mobile }}
           </div>
           <div class="col-md-4 mb-3">
-            <b>Alternative Mobile: </b> 019288237325
+            <b>Alternative Mobile: </b> {{ req.alternative }}
           </div>
           <div class="col-md-4 mb-3">
-            <b>Relation: </b> Other
+            <b>Relation: </b> {{ req.relation }}
           </div>
           <div class="col-md-4 mb-3">
             <b>Present Address: </b>
           </div>
           <div class="col-md-4 mb-3">
-            163/5 siddique bazar, dhaka - 1000
+            {{ req.address }}
           </div>
         </div>
         <div class="d-flex justify-content-end">
